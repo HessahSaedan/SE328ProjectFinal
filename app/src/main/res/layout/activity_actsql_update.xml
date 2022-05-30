@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActsqlAddActivity">
+
+    <TextView
+        android:id="@+id/sqlUpdateLabel"
+        style="@style/textViewStyle"
+        android:text="Update Book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!-- Title -->
+    <LinearLayout
+        android:id="@+id/sqlupdatelayoutTitle"
+        style="@style/linearLayoutstyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sqlUpdateLabel"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/sqlupdatetvTitle"
+            android:layout_width="100dp"
+            style="@style/labelStyle"
+            android:text="@string/stitle"
+            />
+
+        <EditText
+            android:id="@+id/sqlupdateetTitle"
+            style="@style/labelStyle"
+            android:layout_width="300dp"
+            android:background="@null"
+            android:hint="@string/stitle"
+            android:inputType="textPersonName"
+            android:textColorHint="#78909C"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <!-- Author -->
+    <LinearLayout
+        android:id="@+id/sqlupdatelayoutAuthor"
+        style="@style/linearLayoutstyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sqlupdatelayoutTitle"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/sqlupdatetvAdd"
+            android:layout_width="100dp"
+            android:text="@string/sauthor"
+            style="@style/labelStyle"/>
+
+        <EditText
+            android:id="@+id/sqlupdateetAuthor"
+            style="@style/labelStyle"
+            android:layout_width="300dp"
+            android:hint="@string/sauthor"
+            android:inputType="textPersonName"
+            android:textColorHint="#78909C"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <!-- Category -->
+    <LinearLayout
+        android:id="@+id/sqlupdatelayoutCategory"
+        style="@style/linearLayoutstyle"
+        app:layout_constraintTop_toBottomOf="@+id/sqlupdatelayoutAuthor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/sqlupdatetvCategory"
+            android:layout_width="100dp"
+            android:text="@string/scategory"
+            style="@style/labelStyle"/>
+
+        <CheckBox
+            android:id="@+id/sqlupdatecbCat1"
+            android:text="@string/category1"
+            style="@style/chkbox"/>
+        <CheckBox
+            android:id="@+id/sqlupdatecbCat2"
+            android:text="@string/category2"
+            style="@style/chkbox"/>
+
+        <CheckBox
+            android:id="@+id/sqlupdatecbCat3"
+            android:text="@string/category3"
+            style="@style/chkbox"/>
+    </LinearLayout>
+
+    <!-- Type -->
+    <LinearLayout
+        android:id="@+id/sqlupdatelayoutType"
+        style="@style/linearLayoutstyle"
+        app:layout_constraintTop_toBottomOf="@+id/sqlupdatelayoutCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/sqlupdatetvType"
+            android:layout_width="100dp"
+            android:text="@string/stype"
+            style="@style/labelStyle"/>
+
+        <RadioGroup
+            android:id="@+id/sqlupdaterg"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sqlupdaterbPaper"
+                style="@style/rdbtn"
+                android:checked="true"
+                android:text="@string/paper"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/sqlupdaterbDigital"
+                style="@style/rdbtn"
+                android:text="@string/digital"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/sqlupdaterbBoth"
+                style="@style/rdbtn"
+                android:text="@string/both"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Price -->
+    <LinearLayout
+        android:id="@+id/sqlupdatelayoutPrice"
+        style="@style/linearLayoutstyle"
+        app:layout_constraintTop_toBottomOf="@+id/sqlupdatelayoutType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/sqlupdatetvPrice"
+            android:layout_width="100dp"
+            android:text="@string/sprice"
+            style="@style/labelStyle"/>
+
+        <EditText
+            android:id="@+id/sqlupdateetPrice"
+            style="@style/labelStyle"
+            android:layout_width="300dp"
+            android:background="@null"
+            android:hint="@string/sprice"
+            android:inputType="numberDecimal"
+            android:textColorHint="#78909C"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sqllayoutButtons"
+        style="@style/linearLayoutstyle"
+        app:layout_constraintTop_toBottomOf="@+id/sqlupdatelayoutPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sqlBUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:srcCompat="@drawable/updaterecord"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sqlBDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:srcCompat="@drawable/deleterecord"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

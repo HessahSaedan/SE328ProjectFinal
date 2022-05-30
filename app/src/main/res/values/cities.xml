@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="SACities">
+        <item>Riyadh</item>
+        <item>Jeddah</item>
+        <item>Dammam</item>
+        <item>Mecca</item>
+        <item>Maddena</item>
+        <item>Hail</item>
+        <item>Hermlaa</item>
+        <item>Jouf</item>
+    </string-array>
+</resources>

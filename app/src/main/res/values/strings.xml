@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SE328Project</string>
+    <string name="stitle">Title</string>
+    <string name="sauthor">Author</string>
+    <string name="scategory">Category</string>
+    <string name="stype">Type</string>
+    <string name="sprice">Price</string>
+    <string name="category1">Category1</string>
+    <string name="category2">Category2</string>
+    <string name="category3">Category3</string>
+    <string name="clear">Clear</string>
+    <string name="paper">Paper</string>
+    <string name="digital">Digital</string>
+    <string name="both">Both</string>
+    <string name="addbook">Add</string>
+    <string name="updatebook">Update</string>
+    <string name="add_car">Add Car</string>
+    <string name="exit">Exit</string>
+    <string name="model">Model:</string>
+    <string name="plate">Plate</string>
+    <string name="price">Price</string>
+    <string name="year">Year</string>
+    <string name="aaa1234">AAA1234</string>
+    <string name="gmc">GMC</string>
+    <string name="_120000">120000</string>
+    <string name="_2022">2022</string>
+    <string name="clear_car">Clear</string>
+    <string name="car_info">Car Info</string>
+    <string name="delete_car">Delete</string>
+    <string name="update_car">Update</string>
+</resources>
